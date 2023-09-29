@@ -30,8 +30,9 @@ Through this project I want to strive to maintain clean, well-organized code by 
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 
-- Item 1
-- Item 2
-- Item 3
+
+-  I want to enhance my proficiency in JavaScript, including working , event handling, and asynchronous programming using Promises and Fetch API.
+
+
+- I intend to gain experience in testing JavaScript code and debugging to ensure the application's reliability.
