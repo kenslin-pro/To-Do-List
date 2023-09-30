@@ -2,14 +2,24 @@
 
 
 
-
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
+
+//code that will be executed when the user click on the button
+
 function addTask(){
+  
+  
+  // if the user add an empty task, you need to write something message will display
+  
+  
   if (inputBox.value === ''){
     alert("You need to write something!");
   }
+
+// display list
+
   else{
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
@@ -21,21 +31,35 @@ function addTask(){
   inputBox.value = "";
   saveData();
 }
+
+// add checked task
+
+
 listContainer.addEventListener("click",function(e){
   if(e.target.tagName === "LI"){
     e.target.classList.toggle("checked");
     saveData();
+
   }
+
+  
   else if (e.target.tagName === "SPAN"){
     e.target.parentElement.remove();
     saveData();
   }
 }, false)
 
+
+
 function saveData(){
   localStorage.setItem("data", listContainer.innerHTML);
 }
+
+
 function showTask(){
   listContainer.innerHTML = localStorage.getItem("data");
 }
+
+// call the function task
+
 showTask();
