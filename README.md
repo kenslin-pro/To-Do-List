@@ -12,7 +12,7 @@ Through this project I want to strive to maintain clean, well-organized code by 
 
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/7DbfmVx5k-g)
 
 # Development Environment
 
